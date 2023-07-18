@@ -1,0 +1,9 @@
+build/
+archive/
+.vscode/
+*.pyc
+__pycache__/
+submitted/
+*ignore*
+!.gitignore
+upload.sh
