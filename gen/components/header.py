@@ -1,4 +1,5 @@
 from env import lang
+import structure
 
 paper = {
     "en": "letterpaper",
@@ -8,15 +9,21 @@ paper = {
 
 page_indicator = {
     "en": r"\thepage \,of 2",
-    "ja": r"\thepage / 2",
+    "ja": r"\thepage/2",
     "zh": r"第 \thepage 页, 共 2 页"
 }
 
 continue_text = {
-    "en": "Continued on next page",
-    "ja": "次のページに続く",
-    "zh": "接下页"
+    "en": "Continued on next page →",
+    "ja": r"次のページに続く $\rightarrow$",
+    "zh": r"接下页 $\rightarrow$"
 }
+
+latin_font = structure.translate({
+    "en": "Fira Sans",
+    "ja": "noto",
+    "zh": "noto"
+})
 
 template = r"""% !TEX program = xelatex
 \documentclass[{insert_paper},11pt]{article}
@@ -43,7 +50,7 @@ template = r"""% !TEX program = xelatex
 
 %----------FONT OPTIONS----------
 % sans-serif
-\usepackage[sfdefault]{FiraSans}
+\usepackage[sfdefault]{insert_latin_font}
 \usepackage[fallback]{xeCJK}
 \usepackage{pxrubrica}
 \rubysizeratio{0.3}
@@ -67,7 +74,7 @@ template = r"""% !TEX program = xelatex
 \fancyhf{} % clear all header and footer fields
 \footskip 14pt
 \fancyfoot[C]{{insert_page_indicator}}
-\fancyfoot[R]{\ifnum \value{page}<2 {{insert_continue_text} →}\fi}
+\fancyfoot[R]{\ifnum \value{page}<2 {{insert_continue_text}}\fi}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
@@ -131,4 +138,8 @@ template = r"""% !TEX program = xelatex
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 """
 
-code = template.replace("insert_paper", paper[lang]).replace("insert_page_indicator", page_indicator[lang]).replace("insert_continue_text", continue_text[lang])
+code = template \
+  .replace("insert_paper", paper[lang]) \
+    .replace("insert_page_indicator", page_indicator[lang]) \
+      .replace("insert_continue_text", continue_text[lang]) \
+        .replace("insert_latin_font", latin_font)

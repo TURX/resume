@@ -9,34 +9,34 @@ code = r"""
     {
         "title": {
             "en": r"\textbf{KDE Connect (Apple Continuity-like Experience)} $|$ \emph{Swift, Objective-C, C++ (Qt)}",
-            "ja": r"\textbf{KDE Connect (Apple Continuityのような体験)} $|$ \emph{Swift, Objective-C, C++ (Qt)}",
+            "ja": r"\textbf{KDE Connect（Apple Continuityのような体験）} $|$ \emph{Swift, Objective-C, C++ (Qt)}",
             "zh": r"\textbf{KDE Connect (Apple连续互通体验)} $|$ \emph{Swift, Objective-C, C++ (Qt)}"
         },
         "date": {
             "en": r"KDE, November 2018 - Present",
-            "ja": r"KDE, 2018年11月 - 現在",
+            "ja": r"（KDE）2018年11月 - 現在",
             "zh": r"KDE, 2018年11月 - 现今"
         },
         "body": structure.item_list([
             structure.itemize([
                 {
                     "en": r"Lead Developer of macOS version (new UI, device list, secure connection, plugin ports; GSoC'22 proposal)",
-                    "ja": r"KDE ConnectのmacOSバージョンのリードデベロッパ (新UI、デバイスリスト、セキュア接続、プラグイン移植)",
+                    "ja": r"KDE ConnectのmacOSバージョンのリードデベロッパ（新しいUI、セキュア接続、プラグイン移植）",
                     "zh": r"macOS版本主要开发者 (新UI、设备列表、加密连接、插件移植; GSoC'22开题报告)"
                 },
                 {
                     "en": r"Developer and Reviewer of iOS version (About view, background execution with location, trusted networks)",
-                    "ja": r"KDE ConnectのiOSバージョンのデベロッパとレビュアー (Aboutビュー、バックグラウンド実行、信頼できるネットワーク)",
+                    "ja": r"KDE ConnectのiOSバージョンのデベロッパとレビュアー（Aboutビュー、バックグラウンド実行）",
                     "zh": r"iOS版本开发者、审核 (“关于”界面、使用位置的后台执行、网络信任)"
                 },
                 {
                     "en": r"Maintainer of App Store Connect for release and troubleshooting",
-                    "ja": r"App Store Connectのメンテナンス (リリースとトラブルシューティング)",
+                    "ja": r"App Store Connectのメンテナンス（リリースとトラブルシューティング）",
                     "zh": r"App Store Connect维护者 (版本发布、用户反馈)"
                 },
                 {
                     "en": r"Contribution to Android and Linux versions (new conversation in Android SMS)",
-                    "ja": r"AndroidとLinuxのバージョンへの貢献 (Android SMSの新しい会話)",
+                    "ja": r"AndroidとLinuxのバージョンへの貢献（Android SMSの新しい会話）",
                     "zh": r"Android和Linux版本贡献者 (Android创建新短信会话)"
                 }
             ])
@@ -58,37 +58,37 @@ code = r"""
             structure.itemize([
                 {
                     "en": r"OS: xv6 trace count for syscall; priority-based scheduler, virtual memory extension; threading with spin lock",
-                    "ja": r"OS: xv6でsyscallの呼び出し回数の計測; 優先度ベースのスケジューラ、仮想メモリの拡張; スピンロックを使用したスレッドの実装",
+                    "ja": r"OS：xv6でsyscallの呼び出し回数、優先度ベースのスケジューラ、仮想メモリ、スピンロックでのスレッド",
                     "zh": r"操作系统: xv6系统调用跟踪计数器; 基于优先级的调度器, 虚拟内存扩展; 基于自旋锁的线程实现"
                 },
                 {
                     "en": r"OS: distributed network file system with both server and client on idempotent UDP-based protocol",
-                    "ja": r"OS: 分散ネットワークファイルシステムのサーバとクライアントの両方にUDPベースのプロトコルを使用した冪等性のある実装",
+                    "ja": r"OS：分散ネットワークファイルシステムのサーバとクライアントをUDPプロトコルで実装",
                     "zh": r"操作系统: 分布式网络文件系统, 实现了基于幂等UDP协议的服务端和客户端"
                 },
                 {
                     "en": r"OS: wish -- Unix shell to execute program, supporting \texttt{cd}, \texttt{path}, \texttt{exit}, redirection, error, and \texttt{if} statements",
-                    "ja": r"OS: wish -- プログラムを実行するためのUnixシェル、\texttt{cd}, \texttt{path}, \texttt{exit}, リダイレクション, エラー, \texttt{if}文のサポート",
+                    "ja": r"OS：wish -- プログラムを実行できるUnixシェル、\texttt{cd}・\texttt{path}・リダイレクション・エラー・\texttt{if}文のサポート",
                     "zh": r"操作系统: wish -- 用来执行程序的Unix shell, 支持\texttt{cd}, \texttt{path}, \texttt{exit}, 重定向, 错误, 和\texttt{if}语句"
                 },
                 {
                     "en": r"Database: relational database buffer manager, heapfile manager, operations (\texttt{select}, \texttt{delete}, \texttt{insert})",
-                    "ja": r"DB: 関係型データベースのバファーマネージャ、ヒープファイルマネージャ、操作 (\texttt{select}, \texttt{delete}, \texttt{insert})",
+                    "ja": r"DB：関係型データベースのバファーマネージャ、ヒープファイルマネージャ、SQLによる操作",
                     "zh": r"数据库: 关系数据库缓冲管理器, 堆文件管理器, 用户操作后端 (\texttt{select}, \texttt{delete}, \texttt{insert})"
                 },
                 {
                     "en": r"AI: Principle Component Analysis on Face Dataset; Hierarchical Clustering on Item Statistics",
-                    "ja": r"AI: 顔データセットにの主成分分析; アイテム統計に対する階層的クラスタリング",
+                    "ja": r"AI：顔データセットにの主成分分析、アイテム統計に対する階層的クラスタリング",
                     "zh": r"人工智能: 人脸数据集的主成分分析; 物品统计的层次聚类"
                 },
                 {
                     "en": r"AI: Heuristic Player for Teeko Board Game and 8-tile Puzzle; Q-Learning Agent to Find Treasure in Environment",
-                    "ja": r"AI: Teeko Board Gameのと8タイルパズルの発見的プレーヤー; 環境内の宝を見つけるQ学習エージェント",
+                    "ja": r"AI：Teeko Board Gameのと8タイルパズルの発見的プレーヤー、宝探しQ学習エージェント",
                     "zh": r"人工智能: Teeko棋和8方块游戏的启发式玩家; 寻宝环境中的Q学习代理"
                 },
                 {
                     "en": r"PL: Compiler for a subset of C Programming Language",
-                    "ja": r"PL: C言語の部分のためのコンパイラの実装",
+                    "ja": r"PL：C言語の部分のためのコンパイラの実装",
                     "zh": r"程序语言: C语言子集的编译器实现"
                 }
             ])
@@ -103,7 +103,7 @@ code = r"""
         },
         "date": {
             "en": r"GitHub, August 2019 - December 2020",
-            "ja": r"GitHub, 2019年8月 - 2020年12月",
+            "ja": r"（GitHub）2019年8月 - 2020年12月",
             "zh": r"GitHub, 2019年8月 - 2020年12月"
         },
         "body": structure.item_list([
