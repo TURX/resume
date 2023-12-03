@@ -30,7 +30,10 @@ def subheading_list(list: type.ResumeSubHeadingList):
     """
 
     for item in list:
-        code += _subheading_item(item, env.tag)
+        if isinstance(item, dict) and "title" in item.keys():  # ResumeSubHeadingDict
+            code += _subheading_item(item, env.tag)
+        else:  # Translatable
+            code += r"\item[]{\small " + translate(item) + "}\n"
 
     code += r"""
     \resumeSubHeadingListEnd

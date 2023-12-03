@@ -27,17 +27,17 @@ resumeSubHeadings: type.ResumeSubHeadingList = [
             {
                 "en": r"""
                 \begin{tabular*}{0.94\textwidth}[t]{l @{\extracolsep{\fill}} c @{\extracolsep{\fill}} r}
-                    GPA: 3.949/4.0 & Credits: 183 &
+                    GPA: 3.949/4.0 & Credits: 204 &
                 \end{tabular*}
                 """,
                 "ja": r"""
                 \begin{tabular*}{0.94\textwidth}[t]{l @{\extracolsep{\fill}} c @{\extracolsep{\fill}} r}
-                    GPA: 3.949/4.0 & 単位: 183 &
+                    GPA: 3.949/4.0 & 単位: 204 &
                 \end{tabular*}
                 """,
                 "zh": r"""
                 \begin{tabular*}{0.94\textwidth}[t]{l @{\extracolsep{\fill}} c @{\extracolsep{\fill}} r}
-                    GPA: 3.949/4.0 & 学分: 183 &
+                    GPA: 3.949/4.0 & 学分: 204 &
                 \end{tabular*}
                 """
             },

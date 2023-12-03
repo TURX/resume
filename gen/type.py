@@ -23,7 +23,7 @@ class ResumeProjectHeadingDict(typing.TypedDict):
     body: Translatable
     tag: typing.NotRequired[ResumeTags]
 
-ResumeSubHeadingList = typing.List[ResumeSubHeadingDict]
+ResumeSubHeadingList = typing.List[ResumeSubHeadingDict | Translatable]
 
 ResumeProjectHeadingList = typing.List[ResumeProjectHeadingDict]
 

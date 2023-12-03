@@ -46,7 +46,7 @@ code = r"""
     {
         "title": {
             "en": r"\textbf{Highlighted Computer Science Course Projects} $|$ \emph{C, C++, Python, Java}",
-            "ja": r"\textbf{コンピューターサイエンス授業プロジェクトの一部} $|$ \emph{C, C++, Python}",
+            "ja": r"\textbf{コンピューターサイエンス課題の一部} $|$ \emph{C, C++, Python}",
             "zh": r"\textbf{一部分计算机科学课程项目} $|$ \emph{C, C++, Python}"
         },
         "date": {
@@ -76,20 +76,25 @@ code = r"""
                     "ja": r"DB：関係型データベースのバファーマネージャ、ヒープファイルマネージャ、SQLによる操作",
                     "zh": r"数据库: 关系数据库缓冲管理器, 堆文件管理器, 用户操作后端 (\texttt{select}, \texttt{delete}, \texttt{insert})"
                 },
-                {
-                    "en": r"AI: Principle Component Analysis on Face Dataset; Hierarchical Clustering on Item Statistics",
-                    "ja": r"AI：顔データセットにの主成分分析、アイテム統計に対する階層的クラスタリング",
-                    "zh": r"人工智能: 人脸数据集的主成分分析; 物品统计的层次聚类"
-                },
-                {
-                    "en": r"AI: Heuristic Player for Teeko Board Game and 8-tile Puzzle; Q-Learning Agent to Find Treasure in Environment",
-                    "ja": r"AI：Teeko Board Gameのと8タイルパズルの発見的プレーヤー、宝探しQ学習エージェント",
-                    "zh": r"人工智能: Teeko棋和8方块游戏的启发式玩家; 寻宝环境中的Q学习代理"
-                },
+                # {
+                #     "en": r"AI: Principle Component Analysis on Face Dataset; Hierarchical Clustering on Item Statistics",
+                #     "ja": r"AI：顔データセットにの主成分分析、アイテム統計に対する階層的クラスタリング",
+                #     "zh": r"人工智能: 人脸数据集的主成分分析; 物品统计的层次聚类"
+                # },
+                # {
+                #     "en": r"AI: Heuristic Player for Teeko Board Game and 8-tile Puzzle; Q-Learning Agent to Find Treasure in Environment",
+                #     "ja": r"AI：Teeko Board Gameのと8タイルパズルの発見的プレーヤー、宝探しQ学習エージェント",
+                #     "zh": r"人工智能: Teeko棋和8方块游戏的启发式玩家; 寻宝环境中的Q学习代理"
+                # },
                 {
                     "en": r"PL: Compiler for a subset of C Programming Language",
                     "ja": r"PL：C言語の部分のためのコンパイラの実装",
                     "zh": r"程序语言: C语言子集的编译器实现"
+                },
+                {
+                    "en": r"Optimization: Flight Fare Optimization with MIP; Implementation/Analysis of various descent methods",
+                    "ja": r"OPT：MIPによるフライト運賃の最適化、様々な降下法の実装と解析",
+                    "zh": r"优化: 机票价格优化 (MIP); 实现和分析各种下降方法"
                 }
             ])
         ]),

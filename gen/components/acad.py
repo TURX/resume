@@ -3,6 +3,11 @@ import structure
 
 resumeSubHeadings: type.ResumeSubHeadingList = [
     {
+        "en": r"\textbf{Research Interests}: natural language processing, weakly supervised learning, reinforcement learning, optimization",
+        "ja": r"\textbf{研究分野}: 自然言語処理、弱教師あり学習、強化学習、最適化",
+        "zh": r"\textbf{研究方向}: 自然语言处理、弱监督学习、强化学习、优化"
+    },
+    {
         "title": {
             "en": "Research Assistant",
             "ja": "リサーチアシスタント",
@@ -25,10 +30,47 @@ resumeSubHeadings: type.ResumeSubHeadingList = [
         },
         "body": structure.item_list([
             {
-                "en": r"NLP Research in out-of-distribution (OOD) detection. Collaborating with PhD student Rheeya Uppaal.",
+                "en": r"NLP Research in out-of-distribution (OOD) detection and image-text alignment. Collaborating with PhD student Rheeya Uppaal.",
                 "ja": r"自然言語処理研究：分布外検出・PhD学生Rheeya Uppaalと共同研究",
                 "zh": r"自然语言处理研究: 分布外检测；与博士生Rheeya Uppaal合作"
             }
+        ]),
+        "tag": ["resume"]
+    },
+    {
+        "title": {
+            "en": "Research Assistant",
+            "ja": "リサーチアシスタント",
+            "zh": "研究助理"
+        },
+        "date": {
+            "en": "June 2022 - Present",
+            "ja": "2022年6月 - 現在",
+            "zh": "2022年6月 - 现今"
+        },
+        "subtitle": {
+            "en": "Prof. Forrest Sheng Bao, Iowa State University",
+            "ja": r"アイオワ州立大学\ Forrest Sheng Bao教授",
+            "zh": r"爱荷华州立大学 (Iowa State University)\ 鲍盛 (Forrest Sheng Bao) 教授"
+        },
+        "place": {
+            "en": "(Remote) Ames, Iowa, USA",
+            "ja": r"（リモート）米国\ アイオワ州\ エイムズ",
+            "zh": r"(远程) 美国\ 爱荷华州\ 埃姆斯市"
+        },
+        "body": structure.item_list([
+            {
+                "en": "NLP Research in Text Pair Reference-Free Evaluation and Data Augmentation",
+                "ja": "自然言語処理研究：テキストペアの自動評価・データ拡張",
+                "zh": "自然语言处理研究: 自动文本对评价、数据增强"
+            },
+            structure.itemize([
+                {
+                    "en": r"Paper: Forrest Sheng Bao*, Ruixuan Tu*, Ge Luo, Yinfei Yang, Hebi Li, Minghui Qiu, Cen Chen (2022). DocAsRef: A Pilot Empirical Study on Repurposing Reference-based Summary Quality Metrics as Reference-free Metrics. \href{https://arxiv.org/abs/2212.10013}{\ul{\emph{arXiv}}} \emph{(equal contribution co-first author, accepted by EMNLP 2023 Findings, presented in poster and highlight sessions of NewSumm Workshop of EMNLP 2023)}",
+                    "ja": r"論文：Forrest Sheng Bao*, Ruixuan Tu*, Ge Luo, Yinfei Yang, Hebi Li, Minghui Qiu, Cen Chen (2022). DocAsRef: A Pilot Empirical Study on Repurposing Reference-based Summary Quality Metrics as Reference-free Metrics. \href{https://arxiv.org/abs/2212.10013}{\ul{\emph{arXiv}}} \emph{(共同第一著者、EMNLP 2023 Findingsに採択、NewSumm Workshopのポスターとハイライトセッションにて発表)}",
+                    "zh": r"论文: Forrest Sheng Bao*, Ruixuan Tu*, Ge Luo, Yinfei Yang, Hebi Li, Minghui Qiu, Cen Chen (2022). DocAsRef: A Pilot Empirical Study on Repurposing Reference-based Summary Quality Metrics as Reference-free Metrics. \href{https://arxiv.org/abs/2212.10013}{\ul{\emph{arXiv}}} \emph{(共一，被EMNLP 2023 Findings接受，在EMNLP 2023 NewSumm Workshop的海报展示和亮点报告中发表)}"
+                }
+            ])
         ]),
         "tag": ["resume"]
     },
@@ -64,43 +106,6 @@ resumeSubHeadings: type.ResumeSubHeadingList = [
     },
     {
         "title": {
-            "en": "Research Assistant",
-            "ja": "リサーチアシスタント",
-            "zh": "研究助理"
-        },
-        "date": {
-            "en": "June 2022 - Present",
-            "ja": "2022年6月 - 現在",
-            "zh": "2022年6月 - 现今"
-        },
-        "subtitle": {
-            "en": "Prof. Forrest Sheng Bao, Iowa State University",
-            "ja": r"アイオワ州立大学\ Forrest Sheng Bao教授",
-            "zh": r"爱荷华州立大学 (Iowa State University)\ 鲍盛 (Forrest Sheng Bao) 教授"
-        },
-        "place": {
-            "en": "(Remote) Ames, Iowa, USA",
-            "ja": r"（リモート）米国\ アイオワ州\ エイムズ",
-            "zh": r"(远程) 美国\ 爱荷华州\ 埃姆斯市"
-        },
-        "body": structure.item_list([
-            {
-                "en": "NLP Research in Text Pair Reference-Free Evaluation and Data Augmentation",
-                "ja": "自然言語処理研究：テキストペアの自動評価・データ拡張",
-                "zh": "自然语言处理研究: 自动文本对评价、数据增强"
-            },
-            structure.itemize([
-                {
-                    "en": r"Paper: Forrest Sheng Bao*, Ruixuan Tu*, Ge Luo, Yinfei Yang, Hebi Li, Minghui Qiu, Cen Chen (2022). DocAsRef: A Pilot Empirical Study on Repurposing Reference-based Summary Quality Metrics as Reference-free Metrics. \href{https://arxiv.org/abs/2212.10013}{\ul{\emph{arXiv}}} \emph{(equal contribution co-first author, in submission)}",
-                    "ja": r"論文：Forrest Sheng Bao*, Ruixuan Tu*, Ge Luo, Yinfei Yang, Hebi Li, Minghui Qiu, Cen Chen (2022). DocAsRef: A Pilot Empirical Study on Repurposing Reference-based Summary Quality Metrics as Reference-free Metrics. \href{https://arxiv.org/abs/2212.10013}{\ul{\emph{arXiv}}} \emph{(共同第一著者、投稿中)}",
-                    "zh": r"论文: Forrest Sheng Bao*, Ruixuan Tu*, Ge Luo, Yinfei Yang, Hebi Li, Minghui Qiu, Cen Chen (2022). DocAsRef: A Pilot Empirical Study on Repurposing Reference-based Summary Quality Metrics as Reference-free Metrics. \href{https://arxiv.org/abs/2212.10013}{\ul{\emph{arXiv}}} \emph{(共一, 正在发表)}"
-                }
-            ])
-        ]),
-        "tag": ["resume"]
-    },
-    {
-        "title": {
             "en": "Participant, Computer Science Seminars",
             "ja": r"コンピューターサイエンスゼミナー\ 参加者",
             "zh": r"计算机科学研讨班\ 参加者"
@@ -123,9 +128,14 @@ resumeSubHeadings: type.ResumeSubHeadingList = [
         "body": structure.item_list([
             structure.itemize([
             {
-                "en": "Reinforcement Learning Theory and Game Theory Reading Groups by Prof. Xiaojin Jerry Zhu (from June 2022)",
-                "ja": "強化学習理論とゲーム理論読書会（Xiaojin Jerry Zhu教授が主催、2022年6月より参加）",
-                "zh": "强化学习理论和博弈论读书会 (由 Xiaojin Jerry Zhu 教授主持，自2022年6月开始参加)"
+                "en": "Reinforcement Learning Theory and Game Theory Reading Groups by Prof. Xiaojin Jerry Zhu (June 2022 - September 2023)",
+                "ja": "強化学習理論とゲーム理論読書会（Xiaojin Jerry Zhu教授が主催、2022年6月 - 2023年9月）",
+                "zh": "强化学习理论和博弈论读书会 (由 Xiaojin Jerry Zhu 教授主持，2022年6月 - 2023年9月)"
+            },
+            {
+                "en": "Graph Neural Network (Directed Reading Program, Department of Mathematics) by PhD student Karan Srivastava (February 2023 - April 2023)",
+                "ja": "グラフニューラルネットワーク（数学科の指導読書プログラム）（PhD学生Karan Srivastavaが主催、2023年2月 - 2023年4月）",
+                "zh": "图神经网络 (数学系导读项目) (由博士生Karan Srivastava主持，2023年2月 - 2023年4月)"
             },
             {
                 "en": "Reinforcement Learning Empirical Applications Reading Group by Prof. Josiah Hanna (July 2022 - February 2023)",
@@ -133,49 +143,49 @@ resumeSubHeadings: type.ResumeSubHeadingList = [
                 "zh": "强化学习应用读书会 (由 Josiah Hanna 教授主持，2022年7月 - 2023年2月)"
             },
             {
-                "en": "Machine Learning Lunch Meeting by Prof. Xiaojin Jerry Zhu and Machine Learning Group (from February 2023)",
-                "ja": "機械学習ランチミーティング（Xiaojin Jerry Zhu教授と機械学習研究グループが共催、2023年2月より参加）",
-                "zh": "机器学习午餐会 (由 Xiaojin Jerry Zhu 教授和机器学习研究组主持，自2023年2月开始参加)"
+                "en": "Machine Learning Lunch Meeting by Prof. Xiaojin Jerry Zhu and Machine Learning Group (February 2023 - March 2023)",
+                "ja": "機械学習ランチミーティング（Xiaojin Jerry Zhu教授と機械学習研究グループが共催、2023年2月 - 2023年3月）",
+                "zh": "机器学习午餐会 (由 Xiaojin Jerry Zhu 教授和机器学习研究组主持，2023年2月 - 2023年3月)"
             }
             ])
         ]),
         "tag": ["resume"]
     },
-    {
-        "title": {
-            "en": "Mentee, Directed Reading Program",
-            "ja": r"指導読書プログラム\ 聴講生",
-            "zh": r"导读项目\ 学生"
-        },
-        "date": {
-            "en": "February 2023 - April 2023",
-            "ja": "2023年2月 - 2023年4月",
-            "zh": "2023年2月 - 2023年4月"
-        },
-        "subtitle": {
-            "en": "Department of Mathematics, University of Wisconsin-Madison",
-            "ja": r"ウィスコンシン大学マディソン校\ 数学科",
-            "zh": r"威斯康星大学麦迪逊校 (UW-Madison)\ 数学系"
-        },
-        "place": {
-            "en": r"Madison, Wisconsin, USA",
-            "ja": r"米国\ ウィスコンシン州\ マディソン",
-            "zh": r"美国\ 威斯康星州\ 麦迪逊市"
-        },
-        "body": structure.item_list([
-            {
-                "en": "Learned Graph Neural Network along with combinatorics and graph theory under PhD student Karan Srivastava.",
-                "ja": "博士課程の大学院生のKaran Srivastavaの指導で、組み合わせ数学とグラフ理論においてグラフニューラルネットワークを学んだ",
-                "zh": "在博士生Karan Srivastava的指导下，学习了组合数学和图论以及图神经网络"
-            },
-            # {
-            #     "en": "This program pairs undergraduate students with graduate mentors for semester-long independent studies. During the semester, the student will work through a mathematical text and meet weekly to discuss it with their mentor.",
-            #     "ja": "本プログラムは、大学生と大学院生のメンターを1学期間の独立した研究にペアリングするものです。学期中、学生は数学のテキストを通して取り組み、週に1度メンターとのディスカッションを行います",
-            #     "zh": "该项目将本科生与研究生导师配对，进行为期一个学期的独立学习。在学期期间，学生将通过数学课本进行学习，并每周与导师讨论"
-            # }
-        ]),
-        "tag": ["resume"]
-    },
+    # {
+    #     "title": {
+    #         "en": "Mentee, Directed Reading Program",
+    #         "ja": r"指導読書プログラム\ 聴講生",
+    #         "zh": r"导读项目\ 学生"
+    #     },
+    #     "date": {
+    #         "en": "February 2023 - April 2023",
+    #         "ja": "2023年2月 - 2023年4月",
+    #         "zh": "2023年2月 - 2023年4月"
+    #     },
+    #     "subtitle": {
+    #         "en": "Department of Mathematics, University of Wisconsin-Madison",
+    #         "ja": r"ウィスコンシン大学マディソン校\ 数学科",
+    #         "zh": r"威斯康星大学麦迪逊校 (UW-Madison)\ 数学系"
+    #     },
+    #     "place": {
+    #         "en": r"Madison, Wisconsin, USA",
+    #         "ja": r"米国\ ウィスコンシン州\ マディソン",
+    #         "zh": r"美国\ 威斯康星州\ 麦迪逊市"
+    #     },
+    #     "body": structure.item_list([
+    #         {
+    #             "en": "Learned Graph Neural Network along with combinatorics and graph theory under PhD student Karan Srivastava.",
+    #             "ja": "博士課程の大学院生のKaran Srivastavaの指導で、組み合わせ数学とグラフ理論においてグラフニューラルネットワークを学んだ",
+    #             "zh": "在博士生Karan Srivastava的指导下，学习了组合数学和图论以及图神经网络"
+    #         },
+    #         # {
+    #         #     "en": "This program pairs undergraduate students with graduate mentors for semester-long independent studies. During the semester, the student will work through a mathematical text and meet weekly to discuss it with their mentor.",
+    #         #     "ja": "本プログラムは、大学生と大学院生のメンターを1学期間の独立した研究にペアリングするものです。学期中、学生は数学のテキストを通して取り組み、週に1度メンターとのディスカッションを行います",
+    #         #     "zh": "该项目将本科生与研究生导师配对，进行为期一个学期的独立学习。在学期期间，学生将通过数学课本进行学习，并每周与导师讨论"
+    #         # }
+    #     ]),
+    #     "tag": ["resume"]
+    # },
     # TODO: ICPC
     {
         "title": {

@@ -63,10 +63,10 @@ code = r"""
             "ja": r"流暢：英語（TOEFL 103/120）、日本語（JLPT N1 154/180、95.4パーセンタイル）",
             "zh": r"流畅: 英文 (托福103/120)、日语 (日语能力考JLPT N1 154/180, 超过95.4\%)"
         },
-        {
-            "en": r"Beginner: Korean",
-            "ja": r"初心者：韓国語",
-            "zh": r"入门: 韩文"
-        }
+        # {
+        #     "en": r"Beginner: Korean",
+        #     "ja": r"初心者：韓国語",
+        #     "zh": r"入门: 韩文"
+        # }
     ], r"leftmargin=0.15in", structure._item_list_item)
 ], r"leftmargin=0.15in, label={}", structure._item_list_item)
