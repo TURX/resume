@@ -45,9 +45,9 @@ code = r"""
     },
     {
         "title": {
-            "en": r"\textbf{Highlighted Computer Science Course Projects} $|$ \emph{C, C++, Python, Java}",
-            "ja": r"\textbf{コンピューターサイエンス課題の一部} $|$ \emph{C, C++, Python}",
-            "zh": r"\textbf{一部分计算机科学课程项目} $|$ \emph{C, C++, Python}"
+            "en": r"\textbf{Highlighted Course Projects} $|$ \emph{C, C++, Python, Java}",
+            "ja": r"\textbf{授業の課題とプロジェクト} $|$ \emph{C, C++, Python}",
+            "zh": r"\textbf{课程项目} $|$ \emph{C, C++, Python}"
         },
         "date": {
             "en": r"February 2022 - Present",
@@ -95,6 +95,11 @@ code = r"""
                     "en": r"Optimization: Flight Fare Optimization with MIP; Implementation/Analysis of various descent methods",
                     "ja": r"OPT：MIPによるフライト運賃の最適化、様々な降下法の実装と解析",
                     "zh": r"优化: 机票价格优化 (MIP); 实现和分析各种下降方法"
+                },
+                {
+                    "en": r"Japanese Linguistics: Estimated trends by predictions of origin of words using language model",
+                    "ja": r"日本語言語学：言語モデルを使って単語の起源の予測による動向の推定",
+                    "zh": r"日语语言学: 使用语言模型预测词源、估计趋势"
                 }
             ])
         ]),

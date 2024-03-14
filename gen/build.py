@@ -9,7 +9,7 @@ import components.skill as skill
 
 doc = header.code + r"""
 \begin{document}
-""" + heading.code + edu.code + work.code + acad.code + honor.code + proj.code + skill.code + r"""
+""" + heading.code + edu.code + acad.code + work.code + honor.code + proj.code + skill.code + r"""
 \end{document}
 """
 
