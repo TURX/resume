@@ -27,17 +27,17 @@ resumeSubHeadings: type.ResumeSubHeadingList = [
             {
                 "en": r"""
                 \begin{tabular*}{0.94\textwidth}[t]{l @{\extracolsep{\fill}} c @{\extracolsep{\fill}} r}
-                    GPA: 3.888/4.0 & Credits: 204 &
+                    GPA: 3.888/4.0 & Credits: 201 &
                 \end{tabular*}
                 """,
                 "ja": r"""
                 \begin{tabular*}{0.94\textwidth}[t]{l @{\extracolsep{\fill}} c @{\extracolsep{\fill}} r}
-                    GPA: 3.888/4.0 & 単位: 204 &
+                    GPA：3.888/4.0 & 単位：201 &
                 \end{tabular*}
                 """,
                 "zh": r"""
                 \begin{tabular*}{0.94\textwidth}[t]{l @{\extracolsep{\fill}} c @{\extracolsep{\fill}} r}
-                    GPA: 3.888/4.0 & 学分: 204 &
+                    GPA：3.888/4.0 & 学分：201 &
                 \end{tabular*}
                 """
             },
@@ -76,13 +76,13 @@ resumeSubHeadings: type.ResumeSubHeadingList = [
             },
             {
                 "en": r"""
-                \textbf{Mathematics Courses}: Linear Algebra (Honors), Intro-Theory of Probability, Intro-Combinatorics, Analysis I (Honors)/II (Honors), Modern Algebra I (Honors)/II (Honors), Intro-Stochastic Processes (Honors), Elementary Topology (Honors), Real Analysis I (Grad)/II (Grad)
+                \textbf{Mathematics Courses}: Linear Algebra (Honors), Intro-Theory of Probability, Intro-Combinatorics, Analysis I (Honors)/II (Honors), Modern Algebra I (Honors)/II (Honors), Intro-Stochastic Processes (Honors), Elementary Topology (Honors), Real Analysis I (Grad)/II (Grad, 50\% complete)
                 """,
                 "ja": r"""
-                \textbf{数学の授業}：線型代数（Honors）・確率論基礎・組合せ数学基礎・解析 I（Honors）/II（Honors）・現代代数 I（Honors）/II（Honors）・確率過程基礎（Honors）・位相幾何学基礎（Honors）・実解析 I/II（院）・複素解析（院）
+                \textbf{数学の授業}：線型代数（Honors）・確率論基礎・組合せ数学基礎・解析 I（Honors）/II（Honors）・現代代数 I（Honors）/II（Honors）・確率過程基礎（Honors）・位相幾何学基礎（Honors）・実解析 I/II（院）・複素解析（院・半分）
                 """,
                 "zh": r"""
-                \textbf{数学课程}：线性代数 (荣誉)、概率论基础、组合数学基础、数学分析一 (荣誉)/二 (荣誉)、近世代数一 (荣誉)/二 (荣誉)、随机过程基础 (荣誉)、基础拓扑学 (荣誉)、实变函数一/二 (研)
+                \textbf{数学课程}：线性代数 (荣誉)、概率论基础、组合数学基础、数学分析一 (荣誉)/二 (荣誉)、近世代数一 (荣誉)/二 (荣誉)、随机过程基础 (荣誉)、基础拓扑学 (荣誉)、实变函数一（研）/二 (研、一半)
                 """
             },
             {
@@ -90,10 +90,10 @@ resumeSubHeadings: type.ResumeSubHeadingList = [
                 \textbf{Other Major Courses}: Advanced Readings in Japanese, Business Japanese Communication, Classical Japanese, The Tale of Genji, Intro-Japanese Linguistics, Advanced Japanese: Solidifying the Foundations, Advanced Japanese through Audio-Visual Media, Data Science Modeling I/II, Intro-Probability and Mathematical Statistics II, Intro-Deep Learning and Generative Models
                 """,
                 "ja": r"""
-                \textbf{他専攻の授業}: 上級日本語の読解・ビジネス日本語コミュニケーション・日本文語・日本古典文学--源氏物語・日本語言語学基礎・上級日本語の基礎・上級日本語の映像メディア・データ科学モデリング I/II・数理統計学基礎 II・深層学習と生成モデル基礎
+                \textbf{他専攻の授業}：上級日本語の読解・ビジネス日本語コミュニケーション・日本文語・日本古典文学--源氏物語・日本語言語学基礎・上級日本語の基礎・上級日本語の映像メディア・データ科学モデリング I/II・数理統計学基礎 II・深層学習と生成モデル基礎
                 """,
                 "zh": r"""
-                \textbf{其他专业课程}: 高级日语阅读、商务日语交流、古典日语、源氏物语、日语语言学基础、高级日语基础、高级日语视听、数据科学建模一/二、数理统计学基础二、深度学习与生成模型基础
+                \textbf{其他专业课程}：高级日语阅读、商务日语交流、古典日语、源氏物语、日语语言学基础、高级日语基础、高级日语视听、数据科学建模一/二、数理统计学基础二、深度学习与生成模型基础
                 """
             }
         ]),
@@ -134,7 +134,7 @@ resumeSubHeadings: type.ResumeSubHeadingList = [
                 """,
                 "zh": r"""
                 \begin{tabular*}{0.94\textwidth}[t]{l @{\extracolsep{\fill}} c @{\extracolsep{\fill}} r}
-                    加权GPA: 4.325/4.0 & 非加权GPA: 3.816/4.0 & 学分: 28.500
+                    加权GPA：4.325/4.0 & 非加权GPA：3.816/4.0 & 学分：28.500
                 \end{tabular*}
                 """
             },
@@ -146,7 +146,7 @@ resumeSubHeadings: type.ResumeSubHeadingList = [
                 賞：校模範生（2021）、中米プログラム奨学生（2020）、優秀学生クラブリーダー（2020）
                 """,
                 "zh": r"""
-                荣誉: 青春榜样 (2021)、中美班荣誉毕业生 (2020)、优秀学生社团社长 (2020)
+                荣誉：青春榜样 (2021)、中美班荣誉毕业生 (2020)、优秀学生社团社长 (2020)
                 """
             }
         ]),

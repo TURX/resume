@@ -59,22 +59,22 @@ code = r"""
                 {
                     "en": r"OS: xv6 trace count for syscall; priority-based scheduler, virtual memory extension; threading with spin lock",
                     "ja": r"OS：xv6でsyscallの呼び出し回数、優先度ベースのスケジューラ、仮想メモリ、スピンロックでのスレッド",
-                    "zh": r"操作系统: xv6系统调用跟踪计数器; 基于优先级的调度器, 虚拟内存扩展; 基于自旋锁的线程实现"
+                    "zh": r"操作系统：xv6系统调用跟踪计数器; 基于优先级的调度器, 虚拟内存扩展; 基于自旋锁的线程实现"
                 },
                 {
                     "en": r"OS: distributed network file system with both server and client on idempotent UDP-based protocol",
                     "ja": r"OS：分散ネットワークファイルシステムのサーバとクライアントをUDPプロトコルで実装",
-                    "zh": r"操作系统: 分布式网络文件系统, 实现了基于幂等UDP协议的服务端和客户端"
+                    "zh": r"操作系统：分布式网络文件系统, 实现了基于幂等UDP协议的服务端和客户端"
                 },
                 {
                     "en": r"OS: wish -- Unix shell to execute program, supporting \texttt{cd}, \texttt{path}, \texttt{exit}, redirection, error, and \texttt{if} statements",
                     "ja": r"OS：wish -- プログラムを実行できるUnixシェル、\texttt{cd}・\texttt{path}・リダイレクション・エラー・\texttt{if}文のサポート",
-                    "zh": r"操作系统: wish -- 用来执行程序的Unix shell, 支持\texttt{cd}, \texttt{path}, \texttt{exit}, 重定向, 错误, 和\texttt{if}语句"
+                    "zh": r"操作系统：wish -- 用来执行程序的Unix shell, 支持\texttt{cd}, \texttt{path}, \texttt{exit}, 重定向, 错误, 和\texttt{if}语句"
                 },
                 {
                     "en": r"Database: relational database buffer manager, heapfile manager, operations (\texttt{select}, \texttt{delete}, \texttt{insert})",
                     "ja": r"DB：関係型データベースのバファーマネージャ、ヒープファイルマネージャ、SQLによる操作",
-                    "zh": r"数据库: 关系数据库缓冲管理器, 堆文件管理器, 用户操作后端 (\texttt{select}, \texttt{delete}, \texttt{insert})"
+                    "zh": r"数据库：关系数据库缓冲管理器, 堆文件管理器, 用户操作后端 (\texttt{select}, \texttt{delete}, \texttt{insert})"
                 },
                 # {
                 #     "en": r"AI: Principle Component Analysis on Face Dataset; Hierarchical Clustering on Item Statistics",
@@ -89,17 +89,17 @@ code = r"""
                 {
                     "en": r"PL: Compiler for a subset of C Programming Language",
                     "ja": r"PL：C言語の部分のためのコンパイラの実装",
-                    "zh": r"程序语言: C语言子集的编译器实现"
+                    "zh": r"程序语言：C语言子集的编译器实现"
                 },
                 {
                     "en": r"Optimization: Flight Fare Optimization with MIP; Implementation/Analysis of various descent methods",
                     "ja": r"OPT：MIPによるフライト運賃の最適化、様々な降下法の実装と解析",
-                    "zh": r"优化: 机票价格优化 (MIP); 实现和分析各种下降方法"
+                    "zh": r"优化：机票价格优化（MIP）；实现和分析各种下降方法"
                 },
                 {
                     "en": r"Japanese Linguistics: Estimated trends by predictions of origin of words using language model",
                     "ja": r"日本語言語学：言語モデルを使って単語の起源の予測による動向の推定",
-                    "zh": r"日语语言学: 使用语言模型预测词源、估计趋势"
+                    "zh": r"日语语言学：使用语言模型预测词源、估计趋势"
                 }
             ])
         ]),

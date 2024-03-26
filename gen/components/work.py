@@ -101,17 +101,17 @@ resumeSubHeadings: type.ResumeSubHeadingList = [
                 {
                     "en": "Lead Developer of Funix: NodeJS generator from Python functions to serverless web instances",
                     "ja": r"Funix\ リードデベロッパ：Python関数をサーバレスWebサービスに変換できるNodeJS生成プログラム",
-                    "zh": "Funix项目主管: 使用Python生成基于NodeJS的无服务器架构网络实例"
+                    "zh": "Funix项目组长：使用Python生成基于NodeJS的无服务器架构网络实例"
                 },
                 {
                     "en": "Lead Developer of Web Backend: APIs for user auth, permission, admin, RPC and HTTP remote call",
                     "ja": r"Webバックエンド\ リードデベロッパ：ユーザー認証・アクセス権・管理者・リモート関数呼び出し用のAPI",
-                    "zh": "网站后端项目主管: 用户认证、鉴权、管理, 以及基于RPC和HTTP的远程调用"
+                    "zh": "网站后端项目组长：用户认证、鉴权、管理, 以及基于RPC和HTTP的远程调用"
                 },
                 {
                     "en": "Developer of NLP Backend: classical natural language processing task implementation in Python, API migration",
                     "ja": "NLPバックエンドデベロッパ：自然言語処理タスクのPython実装、API マイグレーション",
-                    "zh": "自然语言处理开发人员: 使用Python实现经典自然语言处理任务, 以及API迁移"
+                    "zh": "自然语言处理开发：使用Python实现经典自然语言处理任务, 以及API迁移"
                 }
             ])
         ]),
@@ -141,7 +141,7 @@ resumeSubHeadings: type.ResumeSubHeadingList = [
         "body": {
             "en": "Helped students to improve proficiency through instruction and conversation as an advanced/fluent speaker",
             "ja": "上級/流暢な話者として、指導や会話を通じて学生の言語能力向上を支援した",
-            "zh": "作为一位高级/流利的讲者，通过指导和对话帮助学生提高他们的语言能力"
+            "zh": "作为一位高级/流利的使用者，通过指导和对话帮助学生提高他们的语言能力"
         },
         "tag": None
     },
