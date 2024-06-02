@@ -14,7 +14,7 @@ cp gen/doc.pdf build/resume.pdf
 rm gen/doc.pdf
 
 echo "lang = 'ja'
-tag = ['resume']" > gen/env.py
+tag = ['resume', 'resume-ja']" > gen/env.py
 python3 gen/build.py
 xelatex -interaction=nonstopmode -halt-on-error -output-directory=gen gen/doc.tex
 cp gen/doc.pdf build/resume-ja.pdf

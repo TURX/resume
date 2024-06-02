@@ -10,7 +10,7 @@ code = r"""
         "title": {
             "en": r"\textbf{KDE Connect (Apple Continuity-like Experience)} $|$ \emph{Swift, Objective-C, C++ (Qt)}",
             "ja": r"\textbf{KDE Connect（Apple Continuityのような体験）} $|$ \emph{Swift, Objective-C, C++ (Qt)}",
-            "zh": r"\textbf{KDE Connect (Apple连续互通体验)} $|$ \emph{Swift, Objective-C, C++ (Qt)}"
+            "zh": r"\textbf{KDE Connect（Apple连续互通体验）} $|$ \emph{Swift, Objective-C, C++ (Qt)}"
         },
         "date": {
             "en": r"KDE, November 2018 - Present",
@@ -20,24 +20,29 @@ code = r"""
         "body": structure.item_list([
             structure.itemize([
                 {
+                    "en": r"Data: 284K normal App Store downloads, 10K active testers, and 1M impressions as of April 2024 \href{https://apps.apple.com/us/app/kde-connect/id1580245991}{\ul{\emph{App Store}}}",
+                    "ja": r"データ：2024年4月時点で、28.4万の通常App Storeダウンロード、1万のアクティブテスター、100万のインプレッション \href{https://apps.apple.com/us/app/kde-connect/id1580245991}{\ul{\emph{App Store}}}",
+                    "zh": r"数据：截至2024年4月，App Store下载量28.4万，活跃测试人数1万，展示100万次 \href{https://apps.apple.com/us/app/kde-connect/id1580245991}{\ul{\emph{App Store}}}"
+                },
+                {
                     "en": r"Lead Developer of macOS version (new UI, device list, secure connection, plugin ports; GSoC'22 proposal)",
                     "ja": r"KDE ConnectのmacOSバージョンのリードデベロッパ（新しいUI、セキュア接続、プラグイン移植）",
-                    "zh": r"macOS版本主要开发者 (新UI、设备列表、加密连接、插件移植; GSoC'22开题报告)"
+                    "zh": r"macOS版本主要开发者（新UI、设备列表、加密连接、插件移植; GSoC'22开题报告）"
                 },
                 {
                     "en": r"Developer and Reviewer of iOS version (About view, background execution with location, trusted networks)",
                     "ja": r"KDE ConnectのiOSバージョンのデベロッパとレビュアー（Aboutビュー、バックグラウンド実行）",
-                    "zh": r"iOS版本开发者、审核 (“关于”界面、使用位置的后台执行、网络信任)"
+                    "zh": r"iOS版本开发者、审核（“关于”界面、使用位置的后台执行、网络信任）"
                 },
                 {
                     "en": r"Maintainer of App Store Connect for release and troubleshooting",
                     "ja": r"App Store Connectのメンテナンス（リリースとトラブルシューティング）",
-                    "zh": r"App Store Connect维护者 (版本发布、用户反馈)"
+                    "zh": r"App Store Connect维护者（版本发布、用户反馈）"
                 },
                 {
                     "en": r"Contribution to Android and Linux versions (new conversation in Android SMS)",
                     "ja": r"AndroidとLinuxのバージョンへの貢献（Android SMSの新しい会話）",
-                    "zh": r"Android和Linux版本贡献者 (Android创建新短信会话)"
+                    "zh": r"Android和Linux版本贡献者（Android创建新短信会话）"
                 }
             ])
         ]),
@@ -69,12 +74,12 @@ code = r"""
                 {
                     "en": r"OS: wish -- Unix shell to execute program, supporting \texttt{cd}, \texttt{path}, \texttt{exit}, redirection, error, and \texttt{if} statements",
                     "ja": r"OS：wish -- プログラムを実行できるUnixシェル、\texttt{cd}・\texttt{path}・リダイレクション・エラー・\texttt{if}文のサポート",
-                    "zh": r"操作系统：wish -- 用来执行程序的Unix shell, 支持\texttt{cd}, \texttt{path}, \texttt{exit}, 重定向, 错误, 和\texttt{if}语句"
+                    "zh": r"操作系统：wish -- 用来执行程序的Unix shell，支持\texttt{cd}、\texttt{path}、\texttt{exit}、重定向、错误、\texttt{if}语句"
                 },
                 {
                     "en": r"Database: relational database buffer manager, heapfile manager, operations (\texttt{select}, \texttt{delete}, \texttt{insert})",
                     "ja": r"DB：関係型データベースのバファーマネージャ、ヒープファイルマネージャ、SQLによる操作",
-                    "zh": r"数据库：关系数据库缓冲管理器, 堆文件管理器, 用户操作后端 (\texttt{select}, \texttt{delete}, \texttt{insert})"
+                    "zh": r"数据库：关系数据库缓冲管理器、堆文件管理器、用户操作后端（\texttt{select}、\texttt{delete}、\texttt{insert}）"
                 },
                 # {
                 #     "en": r"AI: Principle Component Analysis on Face Dataset; Hierarchical Clustering on Item Statistics",
@@ -96,11 +101,11 @@ code = r"""
                     "ja": r"OPT：MIPによるフライト運賃の最適化、様々な降下法の実装と解析",
                     "zh": r"优化：机票价格优化（MIP）；实现和分析各种下降方法"
                 },
-                {
-                    "en": r"Japanese Linguistics: Estimated trends by predictions of origin of words using language model",
-                    "ja": r"日本語言語学：言語モデルを使って単語の起源の予測による動向の推定",
-                    "zh": r"日语语言学：使用语言模型预测词源、估计趋势"
-                }
+                # {
+                #     "en": r"Japanese Linguistics: Estimated trends by predictions of origin of words using language model",
+                #     "ja": r"日本語言語学：言語モデルを使って単語の起源の予測による動向の推定",
+                #     "zh": r"日语语言学：使用语言模型预测词源、估计趋势"
+                # }
             ])
         ]),
         "tag": ["resume"]

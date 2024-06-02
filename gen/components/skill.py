@@ -29,12 +29,12 @@ code = r"""
             "en": r"Web/Markup Languages",
             "ja": r"Web/Markup言語",
             "zh": r"网页/排版语言"
-        }) + colon + r"HTML, CSS, Markdown, \LaTeX",
+        }) + colon + r"\LaTeX, Markdown (Pandoc), HTML, CSS",
         structure.translate({
             "en": r"Machine Learning/Data Science",
             "ja": r"機械学習/データ科学",
             "zh": r"机器学习/数据科学"
-        }) + colon + r"PyTorch/TensorFlow/NumPy/Pandas, R, Julia, SQL, MATLAB/GNU Octave",
+        }) + colon + r"HuggingFace, PyTorch/TensorFlow/NumPy/Pandas, R, Julia, SQL, MATLAB",
         structure.translate({
             "en": r"Developer Tools",
             "ja": r"デベロッパツール",
@@ -56,12 +56,12 @@ code = r"""
         {
             "en": r"First Language: Chinese (Mandarin, Gan)",
             "ja": r"ネイティブ：中国語（標準語・贛語）",
-            "zh": r"母语: 中文 (普通话、赣语)"
+            "zh": r"母语: 中文（普通话、赣语）"
         },
         {
             "en": r"Fluent: English (TOEFL 103/120), Japanese (JLPT N1 154/180, 95.4 Percentile)",
             "ja": r"流暢：英語（TOEFL 103/120）、日本語（JLPT N1 154/180、95.4パーセンタイル）",
-            "zh": r"流畅: 英文 (托福103/120)、日语 (日语能力考JLPT N1 154/180, 超过95.4\%)"
+            "zh": r"流畅: 英文（托福103/120）、日语（日语能力考JLPT N1 154/180，超过95.4\%考生）"
         },
         # {
         #     "en": r"Beginner: Korean",

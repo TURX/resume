@@ -19,9 +19,9 @@ resumeSubHeadings: type.ResumeSubHeadingList = [
             "zh": "2023年8月 - 现今"
         },
         "subtitle": {
-            "en": "Prof. Junjie Hu, University of Wisconsin-Madison",
-            "ja": r"ウィスコンシン大学マディソン校\ Junjie Hu教授",
-            "zh": r"威斯康星大学麦迪逊校 (UW-Madison)\ 胡俊杰 (Junjie Hu) 教授"
+            "en": r"Prof. Yiqiao Zhong \& Prof. Junjie Hu, University of Wisconsin--Madison",
+            "ja": r"ウィスコンシン大学マディソン校\ Yiqiao Zhong教授とJunjie Hu教授",
+            "zh": r"威斯康星大学麦迪逊校（UW--Madison）\ Yiqiao Zhong和胡俊杰（Junjie Hu）教授"
         },
         "place": {
             "en": r"Madison, Wisconsin, USA",
@@ -30,9 +30,44 @@ resumeSubHeadings: type.ResumeSubHeadingList = [
         },
         "body": structure.item_list([
             {
-                "en": r"NLP Research in out-of-distribution (OOD) detection on large language model (LLM) security, classical Japanese script (Kuzushiji) recongnition",
-                "ja": r"自然言語処理研究：大規模言語モデルの分布外検出、古典日本語のくずし字認識",
-                "zh": r"自然语言处理研究: LLM的分布外检测、古日语草书的OCR"
+                "en": r"NLP Research in LLM representation",
+                "ja": r"自然言語処理研究：大規模言語モデルの表現",
+                "zh": r"自然语言处理研究: 大语言模型的表示"
+            }
+        ]),
+        "tag": ["resume"]
+    },
+    {
+        "title": {
+            "en": "Independent Researcher",
+            "ja": "独立研究者",
+            "zh": "独立研究者"
+        },
+        "date": {
+            "en": "November 2023 - Present",
+            "ja": "2023年11月 - 現在",
+            "zh": "2023年11月 - 现今"
+        },
+        "subtitle": {
+            "en": r"On Japanese NLP",
+            "ja": r"日本語の自然言語処理",
+            "zh": r"日语的自然语言处理"
+        },
+        "place": {
+            "en": r"Madison, Wisconsin, USA",
+            "ja": r"米国\ ウィスコンシン州\ マディソン",
+            "zh": r"美国\ 威斯康星州\ 麦迪逊市"
+        },
+        "body": structure.item_list([
+            {
+                "en": r"Japanese linguistics: estimated trends by predictions of origin of words using language model",
+                "ja": r"日本語言語学：言語モデルを使って単語の起源の予測による動向の推定",
+                "zh": r"日语语言学：使用语言模型预测词源、估计趋势"
+            },
+            {
+                "en": r"Classical Japanese: Waka generation and Kuzushiji recognition",
+                "ja": r"古典日本語：和歌生成とくずし字認識",
+                "zh": r"古典日语：和歌生成和古文字识别"
             }
         ]),
         "tag": ["resume"]
@@ -44,14 +79,14 @@ resumeSubHeadings: type.ResumeSubHeadingList = [
             "zh": "研究助理"
         },
         "date": {
-            "en": "February 2023 - Present",
-            "ja": "2023年2月 - 現在",
-            "zh": "2023年2月 - 现今"
+            "en": "February 2023 - April 2024",
+            "ja": "2023年2月 - 2024年4月",
+            "zh": "2023年2月 - 2024年4月"
         },
         "subtitle": {
-            "en": "Prof. Xiaojin Jerry Zhu, University of Wisconsin-Madison",
+            "en": "Prof. Xiaojin Jerry Zhu, University of Wisconsin--Madison",
             "ja": r"ウィスコンシン大学マディソン校\ Xiaojin Jerry Zhu教授",
-            "zh": r"威斯康星大学麦迪逊校 (UW-Madison)\ 朱晓瑾 (Xiaojin Jerry Zhu) 教授"
+            "zh": r"威斯康星大学麦迪逊校（UW--Madison）\ 朱晓瑾（Xiaojin Jerry Zhu）教授"
         },
         "place": {
             "en": r"Madison, Wisconsin, USA",
@@ -86,7 +121,7 @@ resumeSubHeadings: type.ResumeSubHeadingList = [
         "place": {
             "en": "(Remote) Ames, Iowa, USA",
             "ja": r"（リモート）米国\ アイオワ州\ エイムズ",
-            "zh": r"(远程) 美国\ 爱荷华州\ 埃姆斯市"
+            "zh": r"（远程）美国\ 爱荷华州\ 埃姆斯市"
         },
         "body": structure.item_list([
             {
@@ -116,9 +151,9 @@ resumeSubHeadings: type.ResumeSubHeadingList = [
             "zh": "2022年6月 - 现今"
         },
         "subtitle": {
-            "en": "Department of Computer Sciences, University of Wisconsin-Madison",
+            "en": "Department of Computer Sciences, University of Wisconsin--Madison",
             "ja": r"ウィスコンシン大学マディソン校\ 情報科学科",
-            "zh": r"威斯康星大学麦迪逊校 (UW-Madison)\ 计算机科学系"
+            "zh": r"威斯康星大学麦迪逊校（UW--Madison）\ 计算机科学系"
         },
         "place": {
             "en": r"Madison, Wisconsin, USA",
@@ -128,8 +163,13 @@ resumeSubHeadings: type.ResumeSubHeadingList = [
         "body": structure.item_list([
             structure.itemize([
             {
+                "en": "LLM Geometry and Interprebility Reading Group by Prof. Yiqiao Zhong (June 2024 - August 2024)",
+                "ja": "大規模言語モデルの幾何学と解釈性輪読（Yiqiao Zhong教授が主催、2024年6月 - 2024年8月）",
+                "zh": "大语言模型几何与可解释性读书会 (由 Yiqiao Zhong 教授主持，2024年6月 - 2024年8月)"
+            },
+            {
                 "en": "Reinforcement Learning Theory and Game Theory Reading Groups by Prof. Xiaojin Jerry Zhu (June 2022 - September 2023)",
-                "ja": "強化学習理論とゲーム理論読書会（Xiaojin Jerry Zhu教授が主催、2022年6月 - 2023年9月）",
+                "ja": "強化学習理論とゲーム理論輪読（Xiaojin Jerry Zhu教授が主催、2022年6月 - 2023年9月）",
                 "zh": "强化学习理论和博弈论读书会 (由 Xiaojin Jerry Zhu 教授主持，2022年6月 - 2023年9月)"
             },
             # {
@@ -149,7 +189,7 @@ resumeSubHeadings: type.ResumeSubHeadingList = [
             }
             ])
         ]),
-        "tag": ["resume-zh"]
+        "tag": ["resume"]
     },
     # {
     #     "title": {
@@ -163,9 +203,9 @@ resumeSubHeadings: type.ResumeSubHeadingList = [
     #         "zh": "2023年2月 - 2023年4月"
     #     },
     #     "subtitle": {
-    #         "en": "Department of Mathematics, University of Wisconsin-Madison",
+    #         "en": "Department of Mathematics, University of Wisconsin--Madison",
     #         "ja": r"ウィスコンシン大学マディソン校\ 数学科",
-    #         "zh": r"威斯康星大学麦迪逊校 (UW-Madison)\ 数学系"
+    #         "zh": r"威斯康星大学麦迪逊校 (UW--Madison)\ 数学系"
     #     },
     #     "place": {
     #         "en": r"Madison, Wisconsin, USA",
@@ -206,7 +246,7 @@ resumeSubHeadings: type.ResumeSubHeadingList = [
         "place": {
             "en": "(Remote) China",
             "ja": "（リモート）中国",
-            "zh": "(远程) 中国"
+            "zh": "（远程）中国"
         },
         "body": structure.item_list([
             structure.itemize([
@@ -227,7 +267,7 @@ resumeSubHeadings: type.ResumeSubHeadingList = [
                 }
             ])
         ]),
-        "tag": ["resume"]
+        "tag": ["resume-zh"]
     }
     # TODO: CIS
 ]
