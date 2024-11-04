@@ -8,6 +8,18 @@ def translate(text: type.Translatable):
     else:
         return text[env.lang]
 
+paper_leading = translate({
+    "en": "Paper: ",
+    "ja": "論文：",
+    "zh": "论文："
+})
+
+def tagged_obj(obj: type.Translatable, tag: type.ResumeTags = None) -> typing.Optional[type.Translatable]:
+    if tag is not None:
+        if list(set(tag) & set(env.tag)) == []:
+            return None  # tag not match
+    return obj
+
 def _subheading_item(item: type.ResumeSubHeadingDict, tag: type.ResumeTags):
     try:
         if tag is not None:
@@ -17,8 +29,8 @@ def _subheading_item(item: type.ResumeSubHeadingDict, tag: type.ResumeTags):
                 return ""  # tag not match
         code = r"""
         \resumeSubheading
-        """ + "{" + translate(item["title"]) + "}" + "{" + translate(item["date"]) + "}" + """
-        """ + "{" + translate(item["subtitle"]) + "}" + "{" + translate(item["place"]) + "}" + """
+        """ + "{" + translate(item["title"]) + "}" + "{" + translate(item["place"]) + "}" + """
+        """ + "{" + translate(item["subtitle"]) + "}" + "{" + translate(item["date"]) + "}" + """
         """ + translate(item["body"])
         return code
     except KeyError:  # not defined for this language
@@ -84,7 +96,9 @@ def item_list(list: type.ResumeItemList, item_parser: type.ItemParser = _item_li
     """
 
     for item in list:
-        if isinstance(item, int):
+        if item is None:
+            continue
+        elif isinstance(item, int):
             code += r"\vspace{" + str(item) + "pt}\n"
         else:
             code += item_parser(item, None)

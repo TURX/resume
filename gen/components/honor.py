@@ -2,7 +2,7 @@ import type
 import structure
 
 code = r"""
-\section{""" + structure.translate({
+\section{""" + r"\faIcon{award} " + structure.translate({
     "en": r"Extracurricular Honors \& Awards",
     "ja": r"受賞歴",
     "zh": r"课外荣誉和奖项"
@@ -14,24 +14,25 @@ code = r"""
     },
     # TODO: ICPC honorable mention
     # -10,  # vspace
-    {
-        "en": r"\textbf{ACSL (American Computer Science League) Senior Division}",
-        "ja": r"\textbf{ACSL（American Computer Science League） 上級コース}",
-        "zh": r"\textbf{ACSL（美国计算机科学联赛） 高级组}"
-    },
-    -4,  # vspace,
-    structure.itemize([
-        {
-            "en": "2020 All-Star: Global Top Score; Personal Gold; Programming Proficiency; Team Silver",
-            "ja": "2020 All-Star：グローバルトップスコア、個人金メダル、プログラミング能力賞、チーム銀メダル",
-            "zh": "2020全明星赛：国际高分奖、个人金奖、编程技能奖、团队银奖（总分全国第二、个人分全国第一）"
-        },
-        {
-            "en": "2019 - 2020: Team Bronze; Individual Distinction",
-            "ja": "2019 - 2020：チーム銀メダル、個人優秀賞",
-            "zh": "2019-2020晋级赛：团队铜奖、个人杰出奖"
-        }
-    ], "label={}, nosep"),
+    structure.tagged_obj(
+        structure.translate({
+            "en": r"\textbf{ACSL (American Computer Science League) Senior Division}",
+            "ja": r"\textbf{ACSL（American Computer Science League） 上級コース}",
+            "zh": r"\textbf{ACSL（美国计算机科学联赛） 高级组}"
+        }) + structure.itemize([
+            {
+                "en": "2020 All-Star: Global Top Score; Personal Gold; Programming Proficiency; Team Silver",
+                "ja": "2020 All-Star：グローバルトップスコア、個人金メダル、プログラミング能力賞、チーム銀メダル",
+                "zh": "2020全明星赛：国际高分奖、个人金奖、编程技能奖、团队银奖（总分全国第二、个人分全国第一）"
+            },
+            {
+                "en": "2019 -- 2020: Team Bronze; Individual Distinction",
+                "ja": "2019 -- 2020：チーム銀メダル、個人優秀賞",
+                "zh": "2019-2020晋级赛：团队铜奖、个人杰出奖"
+            }
+        ], "label={}, nosep"),
+        ["resume-zh", "resume-ja"]
+    ),
     {
         "en": r"\textbf{Google Code-in:} Finalist (Top 6) at KDE Community (2018) and Haiku OS (2019)",
         "ja": r"\textbf{Google Code-in：} Finalist（トップ6）、KDE Community（2018）と Haiku OS（2019）より",

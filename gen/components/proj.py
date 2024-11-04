@@ -1,39 +1,39 @@
 import structure
 
 code = r"""
-\section{""" + structure.translate({
+\section{""" + r"\faIcon{code-branch} " + structure.translate({
     "en": r"Projects",
     "ja": r"プロジェクト",
     "zh": r"项目"
 }) + r"}" + "\n" + structure.projectheading_list([
     {
         "title": {
-            "en": r"\textbf{KDE Connect (Apple Continuity-like Experience)} $|$ \emph{Swift, Objective-C, C++ (Qt)}",
-            "ja": r"\textbf{KDE Connect（Apple Continuityのような体験）} $|$ \emph{Swift, Objective-C, C++ (Qt)}",
-            "zh": r"\textbf{KDE Connect（Apple连续互通体验）} $|$ \emph{Swift, Objective-C, C++ (Qt)}"
+            "en": r"\textbf{KDE Connect (Apple Continuity-like Experience)} \href{https://apps.apple.com/us/app/kde-connect/id1580245991}{\faIcon{app-store-ios}} $|$ \emph{Swift, Objective-C, C++ (Qt)}",
+            "ja": r"\textbf{KDE Connect（Apple Continuityのような体験）} \href{https://apps.apple.com/us/app/kde-connect/id1580245991}{\faIcon{app-store-ios}} $|$ \emph{Swift, Objective-C, C++ (Qt)}",
+            "zh": r"\textbf{KDE Connect（Apple连续互通体验）} \href{https://apps.apple.com/us/app/kde-connect/id1580245991}{\faIcon{app-store-ios}} $|$ \emph{Swift, Objective-C, C++ (Qt)}"
         },
         "date": {
-            "en": r"KDE, November 2018 - Present",
-            "ja": r"（KDE）2018年11月 - 現在",
-            "zh": r"KDE, 2018年11月 - 现今"
+            "en": r"KDE, November 2018 -- Present",
+            "ja": r"（KDE）2018年11月 -- 現在",
+            "zh": r"KDE, 2018年11月 -- 现今"
         },
         "body": structure.item_list([
             structure.itemize([
                 {
-                    "en": r"Data: 284K normal App Store downloads, 10K active testers, and 1M impressions as of April 2024 \href{https://apps.apple.com/us/app/kde-connect/id1580245991}{\ul{\emph{App Store}}}",
-                    "ja": r"データ：2024年4月時点で、28.4万の通常App Storeダウンロード、1万のアクティブテスター、100万のインプレッション \href{https://apps.apple.com/us/app/kde-connect/id1580245991}{\ul{\emph{App Store}}}",
-                    "zh": r"数据：截至2024年4月，App Store下载量28.4万，活跃测试人数1万，展示100万次 \href{https://apps.apple.com/us/app/kde-connect/id1580245991}{\ul{\emph{App Store}}}"
+                    "en": r"Data: 284K normal App Store downloads, 10K active testers, and 1M impressions as of April 2024",
+                    "ja": r"データ：2024年4月時点で、28.4万回の通常App Storeダウンロード、1万人のアクティブテスター、100万回のインプレッション",
+                    "zh": r"数据：截至2024年4月，App Store下载量28.4万，活跃测试人数1万，展示100万次"
                 },
-                {
-                    "en": r"Lead Developer of macOS version (new UI, device list, secure connection, plugin ports; GSoC'22 proposal)",
-                    "ja": r"KDE ConnectのmacOSバージョンのリードデベロッパ（新しいUI、セキュア接続、プラグイン移植）",
-                    "zh": r"macOS版本主要开发者（新UI、设备列表、加密连接、插件移植; GSoC'22开题报告）"
-                },
-                {
-                    "en": r"Developer and Reviewer of iOS version (About view, background execution with location, trusted networks)",
-                    "ja": r"KDE ConnectのiOSバージョンのデベロッパとレビュアー（Aboutビュー、バックグラウンド実行）",
+                structure.translate({
+                    "en": r"Lead Developer of macOS (new UI, device list, secure connection, plugin ports; GSoC'22 proposal)",
+                    "ja": r"macOSバージョンのリードデベロッパ（新しいUI、セキュア接続、プラグイン移植、GSoC'22提案）",
+                    "zh": r"macOS版本主要开发者（新UI、设备列表、加密连接、插件移植、GSoC'22开题报告）"
+                }) + r" \href{https://github.com/TURX/kdeconnect-mac}{\faIcon{github}} \href{https://invent.kde.org/ruixuantu/kdeconnect-mac}{\faIcon{gitlab}}",
+                structure.translate({
+                    "en": r"Developer and Reviewer of iOS (About view, background execution with location, trusted networks)",
+                    "ja": r"iOSバージョンのデベロッパとレビュアー（Aboutビュー、バックグラウンド実行、信頼されたネットワーク）",
                     "zh": r"iOS版本开发者、审核（“关于”界面、使用位置的后台执行、网络信任）"
-                },
+                }) + r" \href{https://github.com/KDE/kdeconnect-ios}{\faIcon{github}} \href{https://invent.kde.org/network/kdeconnect-ios}{\faIcon{gitlab}}",
                 {
                     "en": r"Maintainer of App Store Connect for release and troubleshooting",
                     "ja": r"App Store Connectのメンテナンス（リリースとトラブルシューティング）",
@@ -55,9 +55,9 @@ code = r"""
             "zh": r"\textbf{课程项目} $|$ \emph{C, C++, Python}"
         },
         "date": {
-            "en": r"February 2022 - Present",
-            "ja": r"2022年2月 - 現在",
-            "zh": r"2022年2月 - 现今"
+            "en": r"February 2022 -- Present",
+            "ja": r"2022年2月 -- 現在",
+            "zh": r"2022年2月 -- 现今"
         },
         "body": structure.item_list([
             structure.itemize([
@@ -71,11 +71,11 @@ code = r"""
                     "ja": r"OS：分散ネットワークファイルシステムのサーバとクライアントをUDPプロトコルで実装",
                     "zh": r"操作系统：分布式网络文件系统, 实现了基于幂等UDP协议的服务端和客户端"
                 },
-                {
-                    "en": r"OS: wish -- Unix shell to execute program, supporting \texttt{cd}, \texttt{path}, \texttt{exit}, redirection, error, and \texttt{if} statements",
-                    "ja": r"OS：wish -- プログラムを実行できるUnixシェル、\texttt{cd}・\texttt{path}・リダイレクション・エラー・\texttt{if}文のサポート",
-                    "zh": r"操作系统：wish -- 用来执行程序的Unix shell，支持\texttt{cd}、\texttt{path}、\texttt{exit}、重定向、错误、\texttt{if}语句"
-                },
+                # {
+                #     "en": r"OS: wish -- Unix shell to execute program, supporting \texttt{cd}, \texttt{path}, \texttt{exit}, redirection, error, and \texttt{if} statements",
+                #     "ja": r"OS：wish -- プログラムを実行できるUnixシェル、\texttt{cd}・\texttt{path}・リダイレクション・エラー・\texttt{if}文のサポート",
+                #     "zh": r"操作系统：wish -- 用来执行程序的Unix shell，支持\texttt{cd}、\texttt{path}、\texttt{exit}、重定向、错误、\texttt{if}语句"
+                # },
                 {
                     "en": r"Database: relational database buffer manager, heapfile manager, operations (\texttt{select}, \texttt{delete}, \texttt{insert})",
                     "ja": r"DB：関係型データベースのバファーマネージャ、ヒープファイルマネージャ、SQLによる操作",
@@ -97,10 +97,15 @@ code = r"""
                     "zh": r"程序语言：C语言子集的编译器实现"
                 },
                 {
-                    "en": r"Optimization: Flight Fare Optimization with MIP; Implementation/Analysis of various descent methods",
-                    "ja": r"OPT：MIPによるフライト運賃の最適化、様々な降下法の実装と解析",
-                    "zh": r"优化：机票价格优化（MIP）；实现和分析各种下降方法"
+                    "en": r"Optimization: Flight Fare Optimization with MIP",
+                    "ja": r"OPT：MIPによるフライト運賃の最適化",
+                    "zh": r"优化：机票价格优化（MIP）"
                 },
+                {
+                    "en": r"Optimization: Implementation/Convergence Analysis of 1st- and 2nd-Order Descent Methods",
+                    "ja": r"OPT：1次および2次降下法の実装と収束解析",
+                    "zh": r"优化：一阶和二阶下降法的实现/收敛分析"
+                }
                 # {
                 #     "en": r"Japanese Linguistics: Estimated trends by predictions of origin of words using language model",
                 #     "ja": r"日本語言語学：言語モデルを使って単語の起源の予測による動向の推定",
@@ -117,9 +122,9 @@ code = r"""
             "zh": r"\textbf{aitc19x/VR-JC} $|$ \emph{C\# (Unity)}"
         },
         "date": {
-            "en": r"GitHub, August 2019 - December 2020",
-            "ja": r"（GitHub）2019年8月 - 2020年12月",
-            "zh": r"GitHub, 2019年8月 - 2020年12月"
+            "en": r"GitHub, August 2019 -- December 2020",
+            "ja": r"（GitHub）2019年8月 -- 2020年12月",
+            "zh": r"GitHub, 2019年8月 -- 2020年12月"
         },
         "body": structure.item_list([
             {

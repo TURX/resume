@@ -35,7 +35,7 @@ class PropItem():
         self.item = item
         self.prop = prop
 
-ResumeItemList = typing.List[Translatable | int]
+ResumeItemList = typing.List[typing.Optional[Translatable] | int]
 
 ResumePropableItemList = typing.List[Translatable | int | PropItem]
 

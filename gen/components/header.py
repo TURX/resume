@@ -14,15 +14,21 @@ page_indicator = {
 }
 
 continue_text = {
-    "en": "Continued on next page →",
-    "ja": r"次のページに続く $\rightarrow$",
-    "zh": r"接下页 $\rightarrow$"
+    "en": "Continued on next page",
+    "ja": "次のページに続く",
+    "zh": "接下页"
 }
 
 latin_font = structure.translate({
-    "en": "Fira Sans",
+    "en": "noto",
     "ja": "noto",
     "zh": "noto"
+})
+
+cjk_font = structure.translate({
+    "en": r"\setCJKmainfont[BoldFont=NotoSansCJKjp-Bold,AutoFakeSlant=0.15]{Noto Sans CJK JP}",
+    "ja": r"\setCJKmainfont[BoldFont=NotoSansCJKjp-Bold,AutoFakeSlant=0.15]{Noto Sans CJK JP}",
+    "zh": r"\setCJKmainfont[BoldFont=NotoSansCJKsc-Bold,AutoFakeSlant=0.15]{Noto Sans CJK SC}"
 })
 
 template = r"""% !TEX program = xelatex
@@ -36,13 +42,14 @@ template = r"""% !TEX program = xelatex
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{multicol}
 \usepackage{soul}
 \usepackage{fontawesome5}
+\usepackage{academicons}
 \usepackage{ifthen}
 \usepackage{makecell}
 \XeTeXgenerateactualtext=1
@@ -54,16 +61,8 @@ template = r"""% !TEX program = xelatex
 \usepackage[fallback]{xeCJK}
 \usepackage{pxrubrica}
 \rubysizeratio{0.3}
-\setCJKmainfont[BoldFont=NotoSansCJKjp-Bold,AutoFakeSlant=0.15]{Noto Sans CJK JP}
+insert_cjk_font
 
-% Adjust margins
-%\usepackage[
-%  top=0.5in,
-%  bottom=0.5in,
-%  left=0.5in,
-%  right=0.5in,
-%  includehead,includefoot
-%]{geometry}
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
@@ -74,7 +73,7 @@ template = r"""% !TEX program = xelatex
 \fancyhf{} % clear all header and footer fields
 \footskip 14pt
 \fancyfoot[C]{{insert_page_indicator}}
-\fancyfoot[R]{\ifnum \value{page}<2 {{insert_continue_text}}\fi}
+\fancyfoot[R]{\ifnum \value{page}<2 {{insert_continue_text}} \faIcon{chevron-right}\fi}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
@@ -100,7 +99,7 @@ template = r"""% !TEX program = xelatex
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
+      \textbf{#1} & \small #2 \\
     \end{tabular*}
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textit{\small#3} & \textit{\small #4} \\
@@ -136,10 +135,24 @@ template = r"""% !TEX program = xelatex
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\definecolor{mydarkblue}{rgb}{0, 0, 0.5}
+\hypersetup{
+  colorlinks=true,
+  linkcolor={mydarkblue},
+  filecolor={mydarkblue},
+  citecolor={mydarkblue},
+  urlcolor={mydarkblue},
+  pdftitle={Ruixuan Tu's Resume},
+  pdfauthor={Ruixuan Tu (turx2003@gmail.com)},
+  pdfsubject={Ruixuan Tu's Resume},
+  pdfkeywords={Ruixuan Tu, Resume, Curriculum Vitae, Natural Language Processing, Machine Learning},
+}
 """
 
 code = template \
   .replace("insert_paper", paper[lang]) \
     .replace("insert_page_indicator", page_indicator[lang]) \
       .replace("insert_continue_text", continue_text[lang]) \
-        .replace("insert_latin_font", latin_font)
+        .replace("insert_latin_font", latin_font) \
+          .replace("insert_cjk_font", cjk_font)

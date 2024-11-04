@@ -13,28 +13,28 @@ code = r"""
     "zh": r"技能"
 }) + r"}" + "\n" + structure.itemize(
 [
-    {
+    r"\faIcon{laptop-code} " + structure.translate({
         "en": r"\textbf{Computer Science}",
         "ja": r"\textbf{コンピューターサイエンス}",
         "zh": r"\textbf{计算机科学}"
-    },
+    }),
     structure.itemize([
         -2,  # vspace
         structure.translate({
             "en": r"Programming Languages",
             "ja": r"プログラミング言語",
             "zh": r"编程语言"
-        }) + colon + r"Python, Java/Kotlin, C/C++, JavaScript/TypeScript (NestJS, React, MUI), Objective-C/Swift, C\# (.NET, Mono, Unity), Bash, Assembly (LC-3, AT\&T), PHP, Visual Basic, Lisp, ASP",
+        }) + colon + r"Python, JavaScript/TypeScript (NestJS, React, MUI), Objective-C/Swift, C\# (.NET, Mono, Unity), C/C++, Java/Kotlin, Bash, Assembly (LC-3, AT\&T), PHP, Visual Basic, Lisp, ASP",
         structure.translate({
             "en": r"Web/Markup Languages",
             "ja": r"Web/Markup言語",
             "zh": r"网页/排版语言"
         }) + colon + r"\LaTeX, Markdown (Pandoc), HTML, CSS",
         structure.translate({
-            "en": r"Machine Learning/Data Science",
-            "ja": r"機械学習/データ科学",
-            "zh": r"机器学习/数据科学"
-        }) + colon + r"HuggingFace, PyTorch/TensorFlow/NumPy/Pandas, R, Julia, SQL, MATLAB",
+            "en": r"Machine Learning",
+            "ja": r"機械学習",
+            "zh": r"机器学习"
+        }) + colon + r"HuggingFace/Langchain, PyTorch/TensorFlow/NumPy/Pandas, R, Julia, SQL, MATLAB",
         structure.translate({
             "en": r"Developer Tools",
             "ja": r"デベロッパツール",
@@ -46,11 +46,11 @@ code = r"""
             "zh": r"操作系统"
         }) + colon + r"macOS, Linux (Ubuntu, Debian, OpenWRT, WSL), Windows"
     ], r"leftmargin=0.15in", structure._item_list_item),
-    {
+    r"\faIcon{language} " + structure.translate({
         "en": r"\textbf{Natural Languages}",
         "ja": r"\textbf{自然言語}",
         "zh": r"\textbf{自然语言}"
-    },
+    }),
     structure.itemize([
         -2,  # vspace
         {
